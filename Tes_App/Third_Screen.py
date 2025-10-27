@@ -7,9 +7,17 @@ from PyQt5.QtGui import (QFont)
 
 from instr import *
 
+class Experiment():
+    def __init__(self, age, test1, test2, test3):
+        self.age = age
+        self.test1 = test1
+        self.test2 = test2
+        self.test3 = test3
+
 class FinalWindow(QWidget):
-    def __init__(self):
+    def __init__(self, exp):
         super().__init__()
+        self.exp = exp
         self.set_appear() #Tampilan Jendela
         self.initUI() #Elemen Grafis
         self.connects() #Hubungan antar elemen
@@ -27,6 +35,6 @@ class FinalWindow(QWidget):
         self.index_text = QLabel(txt_index)
 
         self.layout_line = QVBoxLayout()
-        self.layout_line.addWidget(self.index_text, allignment=Qt.AllignCenter)
-        self.layout_line.addWidget(self.workh_text, allignment=Qt.AllignCenter)
+        self.layout_line.addWidget(self.index_text, alignment=Qt.AlignmentFlag.AlignCenter)
+        self.layout_line.addWidget(self.workh_text, alignment=Qt.AlignmentFlag.AlignCenter)
         self.setLayout(self.layout_line)
