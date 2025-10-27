@@ -20,7 +20,6 @@ class FinalWindow(QWidget):
         self.exp = exp
         self.set_appear() #Tampilan Jendela
         self.initUI() #Elemen Grafis
-        self.connects() #Hubungan antar elemen
         self.show() #Start
 
     def set_appear(self):
