@@ -33,3 +33,12 @@ txt_age = 'Full years:'
 txt_finalwin = 'Results'
 txt_index = 'Roufier Index: '
 txt_workheart = 'Cardiac performance: '
+
+
+txt_index = 'Indeks Roufier: '
+txt_workheart = 'Kinerja jantung: '
+txt_res1 = "rendah. Temui dokter Anda segera!"
+txt_res2 = "memuaskan. Temui dokter Anda!"
+txt_res3 = "rata-rata. Mungkin ada baiknya menemui dokter Anda untuk diperiksa."
+txt_res4 = "di atas purata"
+txt_res5 = "tinggi"
